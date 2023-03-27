@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/veradigm-doctors-assessment/doctors-website/static/css/main.ab23bd57.css",
+    "main.js": "/veradigm-doctors-assessment/doctors-website/static/js/main.5393f52c.js",
+    "static/js/787.5c31f829.chunk.js": "/veradigm-doctors-assessment/doctors-website/static/js/787.5c31f829.chunk.js",
+    "index.html": "/veradigm-doctors-assessment/doctors-website/index.html",
+    "main.ab23bd57.css.map": "/veradigm-doctors-assessment/doctors-website/static/css/main.ab23bd57.css.map",
+    "main.5393f52c.js.map": "/veradigm-doctors-assessment/doctors-website/static/js/main.5393f52c.js.map",
+    "787.5c31f829.chunk.js.map": "/veradigm-doctors-assessment/doctors-website/static/js/787.5c31f829.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab23bd57.css",
+    "static/js/main.5393f52c.js"
+  ]
+}

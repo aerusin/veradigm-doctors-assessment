@@ -1,1 +1,0 @@
-# veradigm-doctors-assessment
