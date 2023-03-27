@@ -32,6 +32,43 @@ function App() {
           ))}
         </tbody>
       </table>
+      {selectedDoctor && (
+        <div>
+          <h2>Doctor Details</h2>
+          <p>{selectedDoctor.details}</p>
+          <h2>Similar Doctors:</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Specialty</th>
+                <th>Location</th>
+                <th>Review Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              {doctors
+                //filter by same specialty and location
+                .filter(
+                  (doctor) =>
+                    doctor.specialty === selectedDoctor.specialty &&
+                    doctor.location === selectedDoctor.location &&
+                    doctor.name !== selectedDoctor.name
+                )
+                // sort with the highest review score at the top
+                .sort((a, b) => b.reviewScore - a.reviewScore)
+                .map((doctor, index) => (
+                  <tr key={index}>
+                    <td>{doctor.name}</td>
+                    <td>{doctor.specialty}</td>
+                    <td>{doctor.location}</td>
+                    <td>{doctor.reviewScore}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 }
