@@ -48,3 +48,5 @@ const doctors = [
       "Dr. Jonathan Lee is an orthopedic surgeon with a focus on sports medicine.",
   },
 ];
+
+export default doctors;
